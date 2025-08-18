@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cumple 29 · Sebastian Ibarra</title>
+  <meta name="description" content="Invitación al cumpleaños 29 de Sebastian Ibarra · Viernes 22 de agosto, 8:00 PM · Monclova 108, Las Encinas, Escobedo."/>
+  <meta name="theme-color" content="#0b0b0d" />
+  <style>
+    :root{
+      --bg:#0b0b0d;
+      --card:#121216;
+      --text:#e8e8ea;
+      --muted:#a7a7ac;
+      --accent:#1f1f24;
+      --btn:#1a1a1f;
+      --btnHover:#22222a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    .wrap{min-height:100svh; display:grid; place-items:center; padding:28px}
+    .card{width:min(760px,94vw); background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)) , var(--card); border:1px solid var(--accent); border-radius:24px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.03)}
+
+    .hero{position:relative; width:100%; background:#0e0e12; display:flex; justify-content:center; align-items:center; padding:20px}
+    .hero img{max-width:220px; border-radius:50%; filter:grayscale(100%);}
+
+    .inner{padding:28px}
+    .eyebrow{letter-spacing:.18em; text-transform:uppercase; font-size:.78rem; color:var(--muted)}
+    h1{font-size:clamp(1.9rem, 3.6vw, 2.6rem); line-height:1.1; margin:.45rem 0 0; font-weight:800}
+    .subtitle{color:var(--muted); font-size:1rem; margin:.45rem 0 1rem}
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent); margin:18px 0 22px}
+
+    .grid{display:grid; gap:14px; grid-template-columns:1fr}
+    .row{display:flex; gap:12px; align-items:center}
+    .icon{width:22px; height:22px; display:grid; place-items:center; border:1px solid var(--accent); border-radius:10px; background:rgba(255,255,255,.02)}
+    .label{color:var(--muted); font-size:.9rem}
+    .value{font-weight:600}
+
+    .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:20px}
+    .btn{padding:12px 16px; border-radius:14px; background:var(--btn); color:var(--text); border:1px solid var(--accent); text-decoration:none; font-weight:600; transition:.2s ease; display:inline-flex; align-items:center; gap:10px}
+    .btn:hover{background:var(--btnHover); transform:translateY(-1px)}
+    .btn .dot{width:8px; height:8px; border-radius:50%; background:var(--muted)}
+
+    .note{margin-top:22px; color:var(--muted); font-size:.95rem}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New"}
+    .center{text-align:center}
+
+    .frame{position:relative}
+    .frame:before, .frame:after{content:""; position:absolute; inset:10px; border:1px solid #2a2a31; border-radius:18px; pointer-events:none}
+    .frame:after{inset:20px; border-color:#26262d}
+
+    @media (min-width:640px){ .grid{grid-template-columns:1fr 1fr} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card frame" role="article" aria-labelledby="t">
+      <div class="hero">
+        <img src="PHOTO_PLACEHOLDER" alt="Sebastian Ibarra" />
+      </div>
+
+      <div class="inner center">
+        <span class="eyebrow">Cumpleaños</span>
+        <h1 id="t">Sebastian Ibarra · 29</h1>
+        <p class="subtitle">Celebremos la vuelta al sol con buen mood, música y amigos.</p>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <div class="grid" aria-describedby="detalles">
+          <div class="row" title="Fecha y hora">
+            <div class="icon" aria-hidden="true">🗓️</div>
+            <div>
+              <div class="label">Cuándo</div>
+              <div class="value">Viernes <span class="mono">22/Ago</span> · 8:00 PM</div>
+            </div>
+          </div>
+          <div class="row" title="Ubicación">
+            <div class="icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="label">Dónde</div>
+              <div class="value">Monclova 108 · Las Encinas · Escobedo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta" aria-label="Acciones">
+          <a class="btn" href="https://maps.google.com/?q=Monclova%20108%2C%20Las%20Encinas%2C%20Escobedo" target="_blank" rel="noopener" aria-label="Ver ubicación en Google Maps">
+            <span class="dot" aria-hidden="true"></span> Ver ubicación
+          </a>
+          <a class="btn" href="https://wa.me/5218126913364?text=Hola%20Sebas%2C%20confirmo%20mi%20asistencia%20%F0%9F%8E%89" target="_blank" rel="noopener" aria-label="Confirmar asistencia por WhatsApp">
+            <span class="dot" aria-hidden="true"></span> Confirmar asistencia
+          </a>
+        </div>
+
+        <p class="note">Dress code: <strong>negro u oscuros</strong>.</p>
+        <p class="note">Opción: <strong>sobre o regalo</strong>. <em>Evita que el festejado haga corajes si no traes</em> 😅</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
